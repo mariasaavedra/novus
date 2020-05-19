@@ -1,10 +1,24 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+
+  <nav class="navbar navbar-expand-lg p-4 navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><img width="150px" class="pl-4 d-inline-block align-top" src="./assets/logo.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+
+  <router-view/>
+
+  <div class="footer w-100 bg-dark p-4">
+    <img width="150px" class="d-block align-top p-4" src="./assets/logo.png">
+    <nav class="nav flex-row text-left">
+      <a class="nav-link text-white" href="#">Services</a>
+      <a class="nav-link text-white" href="#">Contact</a>
+      <a class="nav-link text-white" href="#">Support</a>
+    </nav>
+  </div>
+
   </div>
 </template>
 
